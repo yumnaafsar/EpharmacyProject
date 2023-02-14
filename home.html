@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anek+Bangla&family=Inter+Tight:wght@300&family=Oswald:wght@200;500&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,100&display=swap" rel="stylesheet">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+</head>
+<body>
+    <nav>
+        <input type="checkbox" name="" id="check">
+         <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+         </label>
+         <label class="logo"><a href="home.html">MEDSHOP</a></label>
+         <ul>
+            <li><i class="fa-solid fa-temperature-full"></i><a  href="fever.html">Fever</a></li>
+            <li><i class="fa-solid fa-baby"></i><a href="babyCare.html"> Baby Care</a></li>
+            <li><i class="fa-solid fa-tablets"></i><a href="jointPain.html">Joint Pain</a></li>
+            <li><i class="fa-solid fa-syringe"></i><a href="stomachAche.html">Stomachache</a></li>
+            <li><i class="fa-solid fa-head-side-virus"></i><a href="headache.html">Headache</a></li>
+            <li><i class="fa-solid fa-stethoscope"></i><a  href="diabetes.html">Diabetes</a></li>
+            <li><i class="fa-solid fa-weight-scale"></i><a  href="overWeight.html">Overweight</a></li>
+            <li><i class="fa-solid fa-person-pregnant"></i><a  href="pregnant.html">Pregnancy</a></li>
+         </ul>
+         <a href="index.html" class="login">Logout</a>
+         <i class="fa fa-shopping-cart cart"></i>
+    </nav>
+    <div class="home-main">
+        <!-- <img src="medi-back.webp" alt="" height="100%" width="100%"> -->
+        <form action="https://www.google.com/search" method="get" class="search-bar">
+            <input type="text" placeholder="Search for any medicine..." name="q">
+            <button type="submit"><img src="search.png" alt="" class="search-img"></button>
+        </form>
+    </div>
+    <div class="main">
+        <div class="slider">
+            <img src="img/img1.jpg" alt="" id="pic">
+            <div class="btn">
+
+                <button onclick="back()"><i class='bx bx-chevron-left'></i></button>
+                <button onclick="next()"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="category">
+        <div class="c1">
+            <a href="stomachAche.html">
+                <div>
+                    <img src="./img/category/1.png" alt="">
+                    
+                </div>
+            </a>
+            
+            <a href="fever.html">
+                <div>
+                    <img src="./img/category/2.png" alt="">
+                </div>
+            </a>
+           
+            <a href="pregnant.html">
+                <div>
+                    <img src="./img/category/3.png" alt="">
+                </div>
+            </a>
+            
+            <a href="jointPain.html">
+                <div>
+                    <img src="./img/category/4.png" alt="">
+                </div>
+            </a>
+            
+            
+        </div>
+        <div class="c2">
+            <a href="babyCare.html">
+                <div>
+                    <img src="./img/category/5.png" alt="">
+                </div>
+            </a>
+           
+            <a href="headache.html"><div>
+                <img src="./img/category/6.png" alt="">
+            </div>
+            </a>
+            
+            <a href="overWeight.html">
+                <div>
+                    <img src="./img/category/7.png" alt="">
+                </div>
+            </a>
+            
+            <a href="diabetes.html">
+                <div>
+                    <img src="./img/category/8.png" alt="">
+                </div>
+            </a>
+            
+           
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script>
+        var mainimg=document.getElementById("pic");
+        var images=["img/img1.jpg","img/img2.jpg","img/img3.png","img/img4.jpg"];
+        var num=0;
+
+        function next()
+        {
+            num++;
+            if(num>=images.length)
+            {
+            num=0;
+            mainimg.src=images[num]
+            }
+            else{
+                mainimg.src=images[num];
+            }
+        }
+
+        function back()
+        {
+            num--;
+            if(num<0)
+            {
+                num=images.length-1;
+                mainimg.src=images[num];
+            }
+            else{
+                mainimg.src=images[num];
+            }
+        }
+    </script>
+    <footer>
+        <div class="footer-content">
+            <div class="address">
+                <h3>MEDSHOP</h3>
+                <p>1st Floor, Plot No.1 ABC Road,<br>Modern Ociety MCHS<br>Karachi, Sindh 12300, Pakistan<br>phone: <span style="text-decoration: underline;">(021) 11 11 (35935)</span><br>email:  <span style="text-decoration: underline;">st@medshop.pk</span> </p>
+            </div>
+            <div class="social-links">
+                <p>Follow Us:</p><br>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-regular fa-envelope"></i>
+                <p class="copyright">Copyright © 2023 MEDSHOP®.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background: #1DA1F2;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo a{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+   margin-top: -80px;
+   text-align: center;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 15px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Anek Bangla', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+a.active,a.hover{
+    background: rgb(84, 189, 238) ;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+#check{
+    display: none;
+}
+.login{
+    float: right;
+    margin-top: -55px;
+    margin-right: 150px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Anek Bangla', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.cart{
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    margin-right: 80px;
+    z-index: 1000;
+    margin-top: -55px;
+    cursor: pointer;
+    color: black;
+}
+i{
+    font-size: 20px ;
+    color: white;
+}
+
+.home-main{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(29, 128, 190, 0.2),rgba(33, 144, 235, 0.5)),url(medic-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.search-bar{
+    float: right;
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255,255,255,0.9);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+.search-img{
+    height: 40px;
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: blue;
+    text-transform: capitalize;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: rgba(255,255,255,0.6);
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 40px;
+    width: 100%;
+    height: 25vh;
+    background-color:  #1DA1F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.footer-content{
+    display: flex;
+    width: 60%;
+    height: 20vh;
+    font-size: 20px;
+}
+.address{
+    width: 60%;
+    height: 20vh;
+    padding: 20px 50px;
+}
+.social-links{
+    height: 20vh;
+    width: 40%;
+
+    padding: 20px;
+}
+.copyright{
+    color: white;
+    float: right;
+    margin-top: 45px;
+}
+.fa-brands{
+    font-size: 30px;
+    padding: 0px 5px;
+}
+.fa-regular{
+    font-size: 30px;
+    padding: 0px 5px;
+}
+
+
+@media(max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+   }
+   nav ul li a{
+    font-size: 16px;
+   }
+}
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 160px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: #0082e6;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    } 
+    #check:checked ~ .search-bar{
+        
+    }  
+}

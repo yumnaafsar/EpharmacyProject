@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> -->
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Bangla&family=Inter+Tight:wght@300&family=Oswald:wght@200;500&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+   <nav>
+        <input type="checkbox" name="" id="check">
+         <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+         </label>
+         <label class="logo"><a href="home.html">MEDSHOP</a></label>
+         <ul>
+            <li><i class="fa-solid fa-temperature-full"></i><a  href="fever.html">Fever</a></li>
+            <li><i class="fa-solid fa-baby"></i><a href="babyCare.html"> Baby Care</a></li>
+            <li><i class="fa-solid fa-tablets"></i><a href="jointPain.html">Joint Pain</a></li>
+            <li><i class="fa-solid fa-syringe"></i><a href="stomachAche.html">Stomachache</a></li>
+            <li><i class="fa-solid fa-head-side-virus"></i><a href="headache.html">Headache</a></li>
+            <li><i class="fa-solid fa-stethoscope"></i><a  href="diabetes.html">Diabetes</a></li>
+            <li><i class="fa-solid fa-weight-scale"></i><a  href="overWeight.html">Overweight</a></li>
+            <li><i class="fa-solid fa-person-pregnant"></i><a  href="pregnant.html">Pregnancy</a></li>
+         </ul>
+         <a href="index.html" class="login">Logout</a>
+         <i class="fa fa-shopping-cart cart"></i>
+    </nav>
+    <div id="main">
+        <div id="left">
+            <div id="leftImg">
+                <img src="ezomol.png" alt="structure">
+            </div>
+            <div id="leftDesc">
+                <h1>Ezomol 20mg Capsule 14's</h1>
+                <p>by <span> Abbot Laboratories (Pak) Ltd</span></p>
+
+                <div id="details">
+                    <div id="pricing">
+                        <p id="pricing1">Rs.189.34</p>
+                        <p> Rs. 13.52 per Capsule <br>14 Capsules per pack</p>
+                    </div>
+                </div>
+
+                <div id="strip">
+                    <select name="strip" id="strip">
+                        <option value="1">Strip</option>
+                        <option value="2">Packet</option>
+                    </select>
+                </div>
+
+                <button class="buttons" style="background-color:#1DA1F2">Add to Cart</button>
+                <select name="select" id="select">
+                    <option value="0">Quantity</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <p>This medicine requires prescription</p>
+                <button class="buttons"  style="background-color:#1DA1F2">Upload Prescription</button>
+            </div>
+        </div>
+        <div id="right">
+            <a href="#subs">SUBSTITUTE PRODUCTS</a>
+        </div>
+    </div>
+
+    <div class="box">
+
+        <div id="first">
+            <h2>Ezomol 20mg Capsule 14's is composed of</h2>
+            <h3>Esomeprazole</h3>
+            <hr>
+            <h2>Belongs to the category</h2>
+            <h3>Acidity</h3>
+            <hr>
+        </div>
+        <br>
+        <div id="sec">
+            <a onclick="open1()" href="#third">Medicine Overview</a>
+            <a  onclick="open2()" href="#fourth">Warnings</a>
+            <hr style="border-top: 2px solid gray;">
+        </div>
+        <div id="third">
+            <div id="use">  
+                <h4><i class="bi-bag-plus-fill"></i>&nbsp;&nbsp;USES</h4>
+                <p>It is used to treat symptoms of gastroesophageal reflux disease (GERD) and other conditions involving excessive stomach acid such as Zollinger-Ellison syndrome. Esomeprazole is also used to promote healing of erosive esophagitis</p>
+            </div>
+            <div id="side">
+                <h4><i class="bi-exclamation-octagon-fill"></i>&nbsp;&nbsp;SIDE EFFECTS</h4>
+                <p>It can cause headache, flatulance, dry mouth, abdominal pain, diarrhea etc.</p>
+            </div>
+            <div id="not">
+                <h4><i class="bi-x-circle-fill"></i>&nbsp;&nbsp;When Not To Use</h4>
+                <p>Hypersensitivity to esomeprazole or other proton pump inhibitors (PPIs)</p>
+            </div>
+        </div>
+        <div id="fourth">
+            <div id="pr1">
+            <h5><i class="bi-exclamation-triangle-fill"></i>&nbsp;&nbsp;Precaution</h5>
+            <p>Before taking esomeprazole, tell your doctor or pharmacist if you are allergic to it; or to similar drugs (such as lansoprazole, omeprazole); or if you have any other allergies. This product may contain inactive ingredients, which can cause allergic reactions or other problems. Talk to your pharmacist for more details.</p>
+            </div>
+            <div id="pr2">
+                <h5><i class="bi-exclamation-triangle-fill"></i>&nbsp;&nbsp;Precaution</h5>
+                <p>Daily long-term use (e.g., longer than 3 years) may lead to malabsorption or a deficiency of cyanocobalamin</p>
+            </div>
+            <div id="pr3">
+                <h5><i class="bi-exclamation-triangle-fill"></i>&nbsp;&nbsp;Precaution</h5>
+                <p>Contains enteric coated granules (acid labile); do not chew or crush; take 1 hr before meals</p>
+            </div>
+            <div id="pr4">
+                <h5><i class="bi-exclamation-triangle-fill"></i>&nbsp;&nbsp;Precaution</h5>
+                <p>It is unknown if this medication passes into breast milk. However, similar drugs pass into breastmilk. The effects on a nursing infant are unknown. Consult your doctor before breast-feeding.</p>
+            </div>
+            <div id="pr5">
+                <h5><i class="bi-exclamation-triangle-fill"></i>&nbsp;&nbsp;Pregnancy</h5>
+                <p>Please consult your doctor when taking this medicine if you are pregnant</p>
+            </div>
+            <div id="pr6">
+                <h5><i class="bi-file-earmark-excel-fill"></i>&nbsp;&nbsp;Drugs to Avoid</h5>
+                <p>Some products that may interact with this drug include: cilostazol, clopidogrel, methotrexate(especially high-dose treatment), rifampin, St John's wort.
+                </p>
+            </div>
+        </div>
+        <script>
+            function open1(){
+                let x=document.getElementById("third");
+                let y=document.getElementById("fourth");
+                if(x.style.display=="block"){
+                    x.style.display="none";
+                }
+                else
+                {
+                    x.style.display="block";
+                    y.style.display="none";
+    
+                }
+            }
+            function open2(){
+                let x=document.getElementById("third");
+                let y=document.getElementById("fourth");
+                
+                if(y.style.display=="block")
+                {
+                    y.style.display="none";
+                    
+    
+                }
+                else{
+                    x.style.display="none";
+                    y.style.display="block";
+                }
+            }
+    
+        </script>
+    </div>
+    </div>
+    <div id="subs">
+        <H2>SUBSTITUTE PRODUCTS</H2>
+        <div id="rights">
+            <div class="imgs">
+                <img src="somezol.webp" alt="else" height="120px" style="margin-top:30px;">
+                <h4 style="background-color: grey;">Sold Out</h4>
+                <p>Somezol Capsules 20mg 2X7's <br>
+                    <span>Bosch Pharmaceuticals (Pvt) Ltd.</span> <br>
+                    from Rs.87.50 <br>
+                </p>
+            </div>
+            <div class="imgs">
+                <img src="contour.webp" alt="else" height="120px" style="margin-top:30px;">
+                <h4 style="background-color: grey;">Sold Out</h4>
+                <p>Contour Capsules 20mg<br>
+                    <span> S.J & G. Fazal Ellahie (Pvt) Ltd.</span> <br>
+                    from Rs.185.00 <br>
+                </p>
+            </div>
+            <div class="imgs">
+                <img src="novoteph.webp" alt="else" height="120px" style="margin-top:30px;">
+                <p>Novoteph Capsules 20mg 14's<br>
+                    <span>  Sami Pharm (Pvt) Ltd.</span> <br>
+                    from Rs.104.13 <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="address">
+                <h3>MEDSHOP</h3>
+                <p>1st Floor, Plot No.1 ABC Road,<br>Modern Ociety MCHS<br>Karachi, Sindh 12300, Pakistan<br>phone: <span style="text-decoration: underline;">(021) 11 11 (35935)</span><br>email:  <span style="text-decoration: underline;">st@medshop.pk</span> </p>
+            </div>
+            <div class="social-links">
+                <p>Follow Us:</p><br>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-regular fa-envelope"></i>
+                <p class="copyright">Copyright © 2023 MEDSHOP®.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
